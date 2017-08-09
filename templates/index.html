@@ -1,0 +1,119 @@
+<head>
+  <script
+    src="http://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js">
+  </script>
+</head>
+
+
+
+<body>
+<canvas id="scatter" width="400" height="400"></canvas>
+<canvas id="bar" width="400" height="400"></canvas>
+</body>
+
+
+<script>
+
+var rankings = [];
+var years = [];
+
+var points = [];
+
+var teamCounts = {};
+
+$("#bar").hide();
+
+$.getJSON("/data/rankings.json", function(json) {
+    for(var year in json) {
+      years.push(Number(year));
+
+        for(var team in json[year]) {
+
+
+
+          if (team in teamCounts) {
+            teamCounts[team] += 1;
+          }
+          else {
+            teamCounts[team] = 1;
+          }
+
+          var img = new Image();
+          img.src = '/data/logos/' + team + '.png';
+          points.push(img);
+
+          rankings.push({x:Number(year),y:json[year][team]['avg']});
+
+
+
+
+
+        }
+
+    }
+
+    var teams = [];
+    var counts = [];
+    for (var team in teamCounts) {
+      teams.push(team);
+      counts.push(teamCounts[team]);
+    }
+
+
+    var ctx = document.getElementById("scatter").getContext('2d');
+
+
+    var bar = document.getElementById("bar").getContext('2d');
+    var barChart = new Chart(bar, {
+    type: 'bar',
+    data: {
+      labels: teams,
+      datasets: [{
+      label: 'apples',
+      data: counts,
+      backgroundColor: "rgba(153,255,51,1)"
+    }]
+
+
+}
+
+
+
+
+    });
+
+    var scatterChart = new Chart(ctx, {
+        type: 'scatter',
+
+        //labels: years,
+        data: {
+            datasets: [{
+                label: 'Scatter Dataset',
+                data: rankings,
+                pointStyle: points
+            }]
+        },
+        options: {
+            showLines: false,
+            scales: {
+                xAxes: [{
+                    type: 'linear',
+                    position: 'bottom'
+                }]
+            },
+            legend: {
+            display: false
+          }
+        }
+    });
+
+
+});
+
+rankings = rankings.slice(0,5);
+
+
+</script>

@@ -1,0 +1,696 @@
+{
+    "2006": {
+        "Clemson": {
+            "basketball": 21.33,
+            "football": 17.27,
+            "baseball": 5.9,
+            "avg": 14.84
+        },
+        "Florida": {
+            "basketball": 2.83,
+            "football": 5.19,
+            "baseball": 6.5,
+            "avg": 4.84
+        },
+        "Georgia Tech": {
+            "basketball": 22.2,
+            "football": 18.5,
+            "baseball": 8.9,
+            "avg": 16.53
+        },
+        "LSU": {
+            "basketball": 11.83,
+            "football": 9.19,
+            "baseball": 16.83,
+            "avg": 12.62
+        },
+        "Notre Dame": {
+            "basketball": 20.4,
+            "football": 9.19,
+            "baseball": 18.17,
+            "avg": 15.92
+        },
+        "Ohio State": {
+            "basketball": 4.06,
+            "football": 1.06,
+            "baseball": 24.0,
+            "avg": 9.71
+        },
+        "Tennessee": {
+            "basketball": 21.5,
+            "football": 14.62,
+            "baseball": 15.1,
+            "avg": 17.08
+        },
+        "Texas": {
+            "basketball": 19.62,
+            "football": 8.06,
+            "baseball": 10.19,
+            "avg": 12.63
+        },
+        "Texas A&M": {
+            "basketball": 9.17,
+            "football": 22.17,
+            "baseball": 22.0,
+            "avg": 17.78
+        },
+        "Washington State": {
+            "basketball": 14.62,
+            "football": 25.0,
+            "baseball": 28.0,
+            "avg": 22.54
+        }
+    },
+    "2007": {
+        "Arizona State": {
+            "basketball": 23.0,
+            "football": 12.17,
+            "baseball": 10.05,
+            "avg": 15.07
+        },
+        "Arkansas": {
+            "basketball": 18.5,
+            "football": 20.0,
+            "baseball": 8.52,
+            "avg": 15.67
+        },
+        "Clemson": {
+            "basketball": 19.6,
+            "football": 19.0,
+            "baseball": 10.81,
+            "avg": 16.47
+        },
+        "Florida": {
+            "basketball": 22.5,
+            "football": 10.0,
+            "baseball": 19.5,
+            "avg": 17.33
+        },
+        "Kentucky": {
+            "basketball": 20.0,
+            "football": 16.12,
+            "baseball": 13.17,
+            "avg": 16.43
+        },
+        "Louisville": {
+            "basketball": 13.2,
+            "football": 11.25,
+            "baseball": 11.67,
+            "avg": 12.04
+        },
+        "Tennessee": {
+            "basketball": 7.06,
+            "football": 19.33,
+            "baseball": 22.0,
+            "avg": 16.13
+        },
+        "Texas": {
+            "basketball": 10.33,
+            "football": 13.0,
+            "baseball": 12.29,
+            "avg": 11.87
+        },
+        "Texas A&M": {
+            "basketball": 15.25,
+            "football": 23.25,
+            "baseball": 17.05,
+            "avg": 18.52
+        },
+        "UCLA": {
+            "basketball": 4.83,
+            "football": 12.67,
+            "baseball": 20.27,
+            "avg": 12.59
+        },
+        "Virginia": {
+            "basketball": 23.0,
+            "football": 19.83,
+            "baseball": 7.76,
+            "avg": 16.87
+        }
+    },
+    "2008": {
+        "Arizona State": {
+            "basketball": 17.83,
+            "football": 15.0,
+            "baseball": 3.28,
+            "avg": 12.04
+        },
+        "California": {
+            "basketball": 22.0,
+            "football": 23.0,
+            "baseball": 16.12,
+            "avg": 20.38
+        },
+        "Clemson": {
+            "basketball": 14.85,
+            "football": 17.33,
+            "baseball": 17.25,
+            "avg": 16.48
+        },
+        "Florida": {
+            "basketball": 20.2,
+            "football": 4.47,
+            "baseball": 22.5,
+            "avg": 15.72
+        },
+        "Florida State": {
+            "basketball": 23.5,
+            "football": 21.71,
+            "baseball": 4.33,
+            "avg": 16.52
+        },
+        "LSU": {
+            "basketball": 18.25,
+            "football": 10.0,
+            "baseball": 11.12,
+            "avg": 13.12
+        },
+        "Miami": {
+            "basketball": 19.25,
+            "football": 23.0,
+            "baseball": 5.06,
+            "avg": 15.77
+        },
+        "Missouri": {
+            "basketball": 15.5,
+            "football": 11.12,
+            "baseball": 14.28,
+            "avg": 13.63
+        },
+        "North Carolina": {
+            "basketball": 2.33,
+            "football": 20.33,
+            "baseball": 4.0,
+            "avg": 8.89
+        },
+        "Oklahoma": {
+            "basketball": 5.5,
+            "football": 3.47,
+            "baseball": 25.0,
+            "avg": 11.32
+        },
+        "Tennessee": {
+            "basketball": 14.3,
+            "football": 18.0,
+            "baseball": 30.0,
+            "avg": 20.77
+        },
+        "Texas": {
+            "basketball": 10.0,
+            "football": 4.88,
+            "baseball": 16.0,
+            "avg": 10.29
+        },
+        "UCLA": {
+            "basketball": 13.33,
+            "football": 23.0,
+            "baseball": 19.0,
+            "avg": 18.44
+        }
+    },
+    "2009": {
+        "Clemson": {
+            "basketball": 21.12,
+            "football": 21.2,
+            "baseball": 19.06,
+            "avg": 20.46
+        },
+        "Florida": {
+            "basketball": 13.5,
+            "football": 1.44,
+            "baseball": 16.06,
+            "avg": 10.33
+        },
+        "Florida State": {
+            "basketball": 21.5,
+            "football": 18.0,
+            "baseball": 8.85,
+            "avg": 16.12
+        },
+        "Georgia Tech": {
+            "basketball": 21.1,
+            "football": 13.13,
+            "baseball": 10.0,
+            "avg": 14.74
+        },
+        "Kansas": {
+            "basketball": 1.33,
+            "football": 20.88,
+            "baseball": 24.0,
+            "avg": 15.4
+        },
+        "Miami": {
+            "basketball": 23.0,
+            "football": 15.33,
+            "baseball": 14.83,
+            "avg": 17.72
+        },
+        "Michigan": {
+            "basketball": 15.0,
+            "football": 23.33,
+            "baseball": 28.25,
+            "avg": 22.19
+        },
+        "North Carolina": {
+            "basketball": 10.73,
+            "football": 21.8,
+            "baseball": 3.83,
+            "avg": 12.12
+        },
+        "Notre Dame": {
+            "basketball": 23.0,
+            "football": 22.0,
+            "baseball": 27.0,
+            "avg": 24.0
+        },
+        "Ohio State": {
+            "basketball": 13.88,
+            "football": 10.12,
+            "baseball": 24.38,
+            "avg": 16.13
+        },
+        "Oklahoma": {
+            "basketball": 19.67,
+            "football": 15.2,
+            "baseball": 17.12,
+            "avg": 17.33
+        },
+        "Texas": {
+            "basketball": 5.5,
+            "football": 2.38,
+            "baseball": 7.89,
+            "avg": 5.25
+        },
+        "West Virginia": {
+            "basketball": 7.61,
+            "football": 21.8,
+            "baseball": 26.0,
+            "avg": 18.47
+        }
+    },
+    "2010": {
+        "Arizona": {
+            "basketball": 15.33,
+            "football": 16.55,
+            "baseball": 21.33,
+            "avg": 17.74
+        },
+        "Connecticut": {
+            "basketball": 9.07,
+            "football": 25.0,
+            "baseball": 21.5,
+            "avg": 18.52
+        },
+        "Florida": {
+            "basketball": 15.7,
+            "football": 12.25,
+            "baseball": 8.11,
+            "avg": 12.02
+        },
+        "Florida State": {
+            "basketball": 22.0,
+            "football": 19.45,
+            "baseball": 8.89,
+            "avg": 16.78
+        },
+        "North Carolina": {
+            "basketball": 16.62,
+            "football": 18.0,
+            "baseball": 17.17,
+            "avg": 17.26
+        },
+        "Ohio State": {
+            "basketball": 1.82,
+            "football": 5.19,
+            "baseball": 18.17,
+            "avg": 8.39
+        },
+        "Pittsburgh": {
+            "basketball": 4.47,
+            "football": 15.0,
+            "baseball": 23.0,
+            "avg": 14.16
+        },
+        "Texas": {
+            "basketball": 11.81,
+            "football": 11.0,
+            "baseball": 4.16,
+            "avg": 8.99
+        },
+        "Texas A&M": {
+            "basketball": 18.83,
+            "football": 19.0,
+            "baseball": 23.8,
+            "avg": 20.54
+        },
+        "Virginia Tech": {
+            "basketball": 22.0,
+            "football": 15.45,
+            "baseball": 22.6,
+            "avg": 20.02
+        }
+    },
+    "2011": {
+        "Alabama": {
+            "basketball": 16.5,
+            "football": 2.31,
+            "baseball": 20.0,
+            "avg": 12.94
+        },
+        "Baylor": {
+            "basketball": 7.5,
+            "football": 19.0,
+            "baseball": 27.0,
+            "avg": 17.83
+        },
+        "Florida": {
+            "basketball": 12.67,
+            "football": 16.67,
+            "baseball": 2.74,
+            "avg": 10.69
+        },
+        "Florida State": {
+            "basketball": 20.0,
+            "football": 16.9,
+            "baseball": 10.21,
+            "avg": 15.7
+        },
+        "Mississippi State": {
+            "basketball": 18.75,
+            "football": 20.33,
+            "baseball": 17.5,
+            "avg": 18.86
+        },
+        "Texas A&M": {
+            "basketball": 22.17,
+            "football": 13.78,
+            "baseball": 8.58,
+            "avg": 14.84
+        },
+        "Virginia": {
+            "basketball": 20.36,
+            "football": 24.0,
+            "baseball": 4.63,
+            "avg": 16.33
+        }
+    },
+    "2012": {
+        "Arizona": {
+            "basketball": 8.39,
+            "football": 23.33,
+            "baseball": 10.53,
+            "avg": 14.08
+        },
+        "Baylor": {
+            "basketball": 19.67,
+            "football": 25.0,
+            "baseball": 11.29,
+            "avg": 18.65
+        },
+        "Florida": {
+            "basketball": 8.11,
+            "football": 9.75,
+            "baseball": 3.0,
+            "avg": 6.95
+        },
+        "Florida State": {
+            "basketball": 25.0,
+            "football": 8.56,
+            "baseball": 5.37,
+            "avg": 12.98
+        },
+        "Louisville": {
+            "basketball": 5.94,
+            "football": 18.13,
+            "baseball": 23.12,
+            "avg": 15.73
+        },
+        "Oklahoma State": {
+            "basketball": 19.25,
+            "football": 20.75,
+            "baseball": 24.0,
+            "avg": 21.33
+        },
+        "Oregon": {
+            "basketball": 19.38,
+            "football": 3.06,
+            "baseball": 11.26,
+            "avg": 11.23
+        },
+        "UCLA": {
+            "basketball": 16.8,
+            "football": 19.33,
+            "baseball": 11.94,
+            "avg": 16.03
+        }
+    },
+    "2013": {
+        "Florida": {
+            "basketball": 9.06,
+            "football": 17.0,
+            "baseball": 21.0,
+            "avg": 15.69
+        },
+        "Louisville": {
+            "basketball": 9.28,
+            "football": 13.65,
+            "baseball": 12.89,
+            "avg": 11.94
+        },
+        "Notre Dame": {
+            "basketball": 21.0,
+            "football": 20.78,
+            "baseball": 20.17,
+            "avg": 20.65
+        },
+        "Oklahoma": {
+            "basketball": 23.4,
+            "football": 15.06,
+            "baseball": 13.5,
+            "avg": 17.32
+        },
+        "Oklahoma State": {
+            "basketball": 8.71,
+            "football": 14.24,
+            "baseball": 23.09,
+            "avg": 15.35
+        },
+        "Oregon": {
+            "basketball": 14.8,
+            "football": 4.53,
+            "baseball": 9.84,
+            "avg": 9.72
+        },
+        "Texas": {
+            "basketball": 20.4,
+            "football": 19.0,
+            "baseball": 22.67,
+            "avg": 20.69
+        },
+        "UCLA": {
+            "basketball": 21.86,
+            "football": 15.12,
+            "baseball": 9.58,
+            "avg": 15.52
+        }
+    },
+    "2014": {
+        "Arizona": {
+            "basketball": 5.22,
+            "football": 14.45,
+            "baseball": 23.0,
+            "avg": 14.23
+        },
+        "Baylor": {
+            "basketball": 19.33,
+            "football": 7.41,
+            "baseball": 29.0,
+            "avg": 18.58
+        },
+        "Duke": {
+            "basketball": 3.33,
+            "football": 22.5,
+            "baseball": 30.0,
+            "avg": 18.61
+        },
+        "Louisville": {
+            "basketball": 8.39,
+            "football": 22.5,
+            "baseball": 10.26,
+            "avg": 13.72
+        },
+        "Nebraska": {
+            "basketball": 21.0,
+            "football": 19.64,
+            "baseball": 24.67,
+            "avg": 21.77
+        },
+        "North Carolina": {
+            "basketball": 14.78,
+            "football": 22.0,
+            "baseball": 15.14,
+            "avg": 17.31
+        },
+        "Oklahoma": {
+            "basketball": 17.94,
+            "football": 11.36,
+            "baseball": 28.0,
+            "avg": 19.1
+        },
+        "Oklahoma State": {
+            "basketball": 22.33,
+            "football": 20.2,
+            "baseball": 12.31,
+            "avg": 18.28
+        },
+        "TCU": {
+            "basketball": 25.0,
+            "football": 8.42,
+            "baseball": 14.2,
+            "avg": 15.87
+        },
+        "UCLA": {
+            "basketball": 22.0,
+            "football": 13.81,
+            "baseball": 21.11,
+            "avg": 18.97
+        },
+        "Washington": {
+            "basketball": 16.75,
+            "football": 25.0,
+            "baseball": 11.92,
+            "avg": 17.89
+        }
+    },
+    "2015": {
+        "Arizona": {
+            "basketball": 13.61,
+            "football": 20.0,
+            "baseball": 19.0,
+            "avg": 17.54
+        },
+        "Baylor": {
+            "basketball": 19.88,
+            "football": 6.12,
+            "baseball": 23.0,
+            "avg": 16.33
+        },
+        "California": {
+            "basketball": 18.4,
+            "football": 22.5,
+            "baseball": 15.92,
+            "avg": 18.94
+        },
+        "Iowa": {
+            "basketball": 10.4,
+            "football": 9.73,
+            "baseball": 17.09,
+            "avg": 12.41
+        },
+        "LSU": {
+            "basketball": 22.0,
+            "football": 11.4,
+            "baseball": 2.28,
+            "avg": 11.89
+        },
+        "North Carolina": {
+            "basketball": 5.61,
+            "football": 13.43,
+            "baseball": 22.25,
+            "avg": 13.76
+        },
+        "Notre Dame": {
+            "basketball": 20.17,
+            "football": 8.75,
+            "baseball": 24.4,
+            "avg": 17.77
+        },
+        "Oklahoma": {
+            "basketball": 4.06,
+            "football": 12.12,
+            "baseball": 23.67,
+            "avg": 13.28
+        },
+        "Oregon": {
+            "basketball": 16.45,
+            "football": 14.33,
+            "baseball": 12.4,
+            "avg": 14.4
+        },
+        "Texas A&M": {
+            "basketball": 17.14,
+            "football": 15.0,
+            "baseball": 5.81,
+            "avg": 12.65
+        },
+        "UCLA": {
+            "basketball": 23.5,
+            "football": 16.0,
+            "baseball": 6.72,
+            "avg": 15.41
+        },
+        "USC": {
+            "basketball": 22.0,
+            "football": 15.12,
+            "baseball": 16.31,
+            "avg": 17.81
+        }
+    },
+    "2016": {
+        "Florida": {
+            "basketball": 19.92,
+            "football": 18.0,
+            "baseball": 1.84,
+            "avg": 13.26
+        },
+        "Florida State": {
+            "basketball": 15.86,
+            "football": 12.31,
+            "baseball": 9.5,
+            "avg": 12.56
+        },
+        "Louisville": {
+            "basketball": 9.89,
+            "football": 9.38,
+            "baseball": 5.26,
+            "avg": 8.18
+        },
+        "Miami": {
+            "basketball": 25.0,
+            "football": 17.86,
+            "baseball": 3.42,
+            "avg": 15.43
+        },
+        "Michigan": {
+            "basketball": 25.0,
+            "football": 4.31,
+            "baseball": 24.11,
+            "avg": 17.81
+        },
+        "North Carolina": {
+            "basketball": 7.83,
+            "football": 19.17,
+            "baseball": 12.0,
+            "avg": 13.0
+        },
+        "Notre Dame": {
+            "basketball": 20.92,
+            "football": 15.33,
+            "baseball": 28.0,
+            "avg": 21.42
+        },
+        "Oregon": {
+            "basketball": 12.39,
+            "football": 23.33,
+            "baseball": 14.0,
+            "avg": 16.57
+        },
+        "UCLA": {
+            "basketball": 6.78,
+            "football": 16.0,
+            "baseball": 20.5,
+            "avg": 14.43
+        }
+    }
+}
