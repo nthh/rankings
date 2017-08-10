@@ -1,0 +1,202 @@
+
+from urllib import request
+from bs4 import BeautifulSoup
+import pandas as pd
+import re
+
+dfs = {'baseball':pd.DataFrame(),'football':pd.DataFrame(),'basketball':pd.DataFrame()}
+
+df_all = pd.DataFrame()
+
+for year in range(2007,2016+1):
+       
+    for sport in ['baseball','football','basketball']:
+        print(year)
+        links = {
+            'baseball': 'https://en.wikipedia.org/wiki/{}_NCAA_Division_I_baseball_rankings'.format(str(year+1)),
+            'football': 'https://en.wikipedia.org/wiki/{}_NCAA_Division_I_FBS_football_rankings'.format(str(year)),
+            'basketball': 'https://en.wikipedia.org/wiki/{}%E2%80%93{}_NCAA_Division_I_men%27s_basketball_rankings'.format(str(year),str(year+1)[-2:].zfill(2))
+            }
+
+   
+        soup = BeautifulSoup(request.urlopen(url=links[sport]).read())
+
+        df = pd.read_html(str(soup.find(id=['AP_Poll','AP_poll','Collegiate_Baseball','Collegiate_Baseball_Poll']).find_next('table')))[0]
+
+        columns = ['RK']
+        columns.extend(df.loc[0][1:])
+        df.columns = columns
+        df['SEASON'] = year
+        df['SPORT'] = sport
+
+        df_all = df_all.append(pd.melt(df[df.RK.notnull()],id_vars=['RK','SEASON','SPORT'], 
+                                       value_vars = [row for row in df.columns if str(row) not in ('SPORT','SEASON','nan','RK')], 
+                                       var_name = 'WEEK', value_name = 'TEAM')).dropna()
+        
+df_all['WEEK_PARSED'] = df_all.WEEK.map(lambda x: x.split('[')[0].split())
+df_all['WEEK_NUM'] = df_all['WEEK_PARSED'].map(lambda x: x[0] if len(x) == 3 else x[1] )
+df_all['TEAM_PARSED'] = df_all.TEAM.map(lambda x: x.replace('–','').replace('State','St').replace('.','').replace('ʻ','').replace('’',"'").replace('т','').split('(')[0].split('(')[0].split('(')[0].strip())
+df_all.TEAM_PARSED = df_all.TEAM_PARSED.map(lambda x: x[0:re.search("\d", x).start()].strip() if re.search("\d", x) != None else x )
+df_all.TEAM_PARSED = df_all.TEAM_PARSED.map(lambda x: x.replace('Cal state Fullerton','Cal St Fullerton').replace('Southern California','USC').replace('Louisvlle','Louisville').replace('Lousiville','Louisville').replace('louisville','Louisville'))
+
+
+
+
+
+
+
+
+'abc'.replace(['a','b'],'a')
+
+'appalachian state'
+
+df_all.TEAM_PARSED = df_all.TEAM_PARSED.map(lambda x: x.replace('Southern California','USC').replace('Lousiville','Louisville').replace('louisville','Louisville'))
+
+
+import requests
+from io import BytesIO
+from IPython.display import Image, display
+import requests
+from time import sleep
+
+
+
+
+logos = {}
+schools = sorted(list(df_all.TEAM_PARSED.unique()))
+
+for school in schools:
+    print(school)
+    
+    school_p = school.lower().replace(' ','-')
+    
+    img = 'http://i.turner.ncaa.com/dr/ncaa/ncaa7/release/sites/default/files/images/logos/schools/%s/%s.40.png'%(school_p[0],school_p)
+    
+    session = requests.Session()
+    response = session.get(img, headers={'User-Agent': 'Mozilla/5.0'})
+
+    #ip = input('Keep?')
+    if response.status_code == 200:
+        logos[school] = img
+    else:
+        logos[school] = 'No image found'
+    sleep(.3)
+ 
+
+logos
+
+no_logo = []
+for team in logos:
+    if logos[team] == 'No image found':
+        no_logo.append(team)
+len(no_logo)
+
+logos
+
+for school in no_logo:
+    print(school)
+    
+    team = school
+    lnk = 'https://www.google.com/search?q=site:ncaa.com/schools+{}&gbv=1&sei=YwHNVpHLOYiWmQHk3K24Cw'.format(team.replace("'",'').replace(' ','+'))
+
+    r = requests.get(lnk)
+    soup = BeautifulSoup(r.text, "html.parser")
+
+    school_p = soup.findAll('cite')[0].text.split('/')[-1]
+ 
+    img = 'http://i.turner.ncaa.com/dr/ncaa/ncaa7/release/sites/default/files/images/logos/schools/%s/%s.40.png'%(school_p[0],school_p)
+    
+    session = requests.Session()
+    response = session.get(img, headers={'User-Agent': 'Mozilla/5.0'})
+
+    #ip = input('Keep?')
+    if response.status_code == 200:
+        logos[school] = img
+        print('found')
+    else:
+        print('not found')
+        logos[school] = 'No image found'
+    sleep(.3)
+
+no_logo
+
+logos["St John's"]
+
+
+
+
+
+soup
+
+import /
+Image(url= 'http://localhost:8888/static/base/images/logo.pang')
+
+
+
+    
+
+print(response.status_code)
+
+'Louisiana-Lafayette',
+ 'Louisiana–-Lafayette',
+    'Louisville',
+ 'Louisvlle',
+ 'Lousiville',
+    'louisville'
+    
+
+
+sorted(list(df_all.TEAM_PARSED.unique()))
+
+df_all[df_all.TEAM_PARSED.str.contains('Harvard , Utah')]
+
+df_all.TEAM_PARSED.map(lambda x: re.search("\d", x))
+
+for sport in ['baseball','basketball','football']: 
+    print(sport,':',len(df_all[(df_all.RK <= 25) & (df_all.SPORT == sport)
+                              & (df_all.WEEK_NUM == 
+                                 str(max(pd.to_numeric(df_all[(df_all.SPORT == sport) &  (df_all.WEEK_NUM != 'Preseason')].WEEK_NUM)))
+                                )
+                              ].TEAM_PARSED.unique()))
+    
+
+for sport in ['baseball','basketball','football']: 
+    print(sport,':',len(df_all[(df_all.RK <= 25) & (df_all.SPORT == sport)
+                              & (df_all.WEEK_NUM == 
+                                 str(max(pd.to_numeric(df_all[(df_all.SPORT == sport) &  (df_all.WEEK_NUM != 'Preseason')].WEEK_NUM)))
+                                )
+                              ].TEAM_PARSED.unique()))
+    
+    
+for sport in ['baseball','basketball','football']: 
+    print(df_all[(df_all.SPORT == sport)].groupby(['SEASON']).size())
+    
+    
+
+a = [1,2,3,4]
+b = [1,2,3]
+
+max(pd.to_numeric(df_all[(df_all.SPORT == sport) &  (df_all.WEEK_NUM != 'Preseason')].WEEK_NUM)).str
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+df_all['WEEK_PARSED'] = df_all.WEEK_PARSED
+
+
+
+dfs['basketball'][dfs['basketball'].SEASON == 2007]
+
+request.urlopen('link')
+
+sport
