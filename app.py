@@ -11,6 +11,10 @@ def send_js(path):
 def home():
     return render_template('index.html')
 
+@app.route('/<string:sport>/<int:season>/')
+def byseason(sport,season):
+    return render_template('season.html', sport = sport, season = season)
+
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
 	port = int(os.environ.get('PORT', 5000))
